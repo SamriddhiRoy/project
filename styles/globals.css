@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+.bg-black {
+  background-color: #000;
+  padding-top: 0; 
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 40rem;
+  padding-top: 0; 
+}
+
+.card {
+  position: relative;
+  width: 40rem;
+  height: 15rem;
+  overflow: hidden;
+  transition: .4s ease-in-out;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .3);
+  margin-bottom: 0; 
+}
+
+.card img {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.card:hover {
+  height: 20rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 40rem;
+  overflow-y: auto;
+}
+
+.featured-text {
+  color: white;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #000;
+  padding: 1rem;
+}
+
+.box {
+  width: 96px;
+  height: 80px;
+  border: 2px solid white; 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out; 
+}
+
+.text {
+  color: white;
+  margin-left: 2px;
+
+}
+
+.connect-box {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 0 8px;
+  color: white;
+}
+
+.close-text {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 8px; 
+  align-self: center; 
+}
+
+.expanded {
+  width: 294px;
+  height: 320px;
+  border: 2px solid white;
+}
+
+
+
+
+
+
+.bg-black {
+  background-color: #000;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.video {
+  width: 90vw; 
+  height: 80vh; 
+  object-fit: cover;
+}
+
+
+
+
+
+
+.slider-section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.text-slider {
+  display: flex;
+  animation: slide 5s linear infinite;
+  white-space: nowrap; 
+}
+
+.text-slider p {
+  padding: 20px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.three-boxes-section {
+  display: flex;
+}
+
+.white-border70 {
+  flex: 1; 
+  height: 100%; 
+}
+
+.white-border40 {
+  border-left: 2px solid white; 
+  border-right: 2px solid white; 
+  flex: 0.4; 
+  height: 100%; 
+}
+
+
+.box1, .box2, .box3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photo-section {
+  display: flex;
+}
+
+
+.square-box {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  border: 2px solid white; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px; 
+}
+
+.box-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white; 
+}
+
+.box-paragraph {
+  text-align: center;
+  color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
