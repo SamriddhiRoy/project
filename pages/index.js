@@ -1,15 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Loader from '../components/Loader'; // Import the Loader component
 
 const Home = () => {
   const [isExpanded, setExpanded] = useState(false);
+  const [loading, setLoading] = useState(true); // Add loading state
+
+  useEffect(() => {
+    // Simulate loading process
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div style={{ minHeight: '100vh' }}>
-      <Header />
-      <IntroSection setExpanded={setExpanded} />
-      <Footer />
+      {loading ? ( // Show loader while loading
+        <Loader number="1" />
+      ) : (
+        <div>
+          <Header />
+          <IntroSection setExpanded={setExpanded} />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 };
